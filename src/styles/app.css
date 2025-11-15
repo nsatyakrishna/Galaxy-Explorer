@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: transparent;
+}
+
+.scene-container {
+  flex: 1 1 auto;
+  position: relative;
+  min-height: 0;
+}
+
+.scene-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 960px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .scene-container {
+    height: 60vh;
+  }
+}
